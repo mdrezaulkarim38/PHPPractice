@@ -7,6 +7,16 @@
 	<title>PHP Tutorial</title>
 </head>
 <body>
-<h1><?php echo 'Welcome to PHP'; ?></h1>
+<pre>
+<?php
+echo 'Welcome to PHP';
+$name = "Shuvo";
+if ($name == "Shuvo") {
+	echo "<br>My Name is " . $name;
+}
+
+
+?>
+</pre>
 </body>
 </html>
