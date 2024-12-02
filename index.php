@@ -9,7 +9,7 @@
 <body>
 <pre>
 <?php
-echo 'Welcome to PHP';
+echo 'Welcome to PHP'; # This is one line comment 
 $name = "Shuvo";
 if ($name == "Shuvo") {
 	echo "<br>My Name is " . $name;
