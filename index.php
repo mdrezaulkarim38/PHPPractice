@@ -14,9 +14,9 @@ $name = "Shuvo";
 if ($name == "Shuvo") {
 	echo "<br>My Name is " . $name;
 }
-
-
+$title = "PHP is Awesome";
 ?>
 </pre>
+<h1><?php echo $title; ?></h1>
 </body>
 </html>
