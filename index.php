@@ -45,6 +45,10 @@ $count = 0;
 $max = 1000;
 $page_size = 10;
 # Float Type
+$price = 10.25;
+$tax = 0.08;
+
+# Boolean Type
 
 
 ?>
