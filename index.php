@@ -69,6 +69,23 @@ echo $prices['laptop'] . '<br>';
 echo $prices['mouse'] . '<br>';
 echo $prices['keyboard'] . '<br>';
 
+$is_submitted = false;
+$is_valid = true;
+
+echo is_bool($is_submitted) . '<br>';
+
+var_dump($is_submitted);
+
+$name = 'John';
+echo 'Hello ' . $name . '<br>';
+
+echo $title[0] . '<br>';
+
+$he = 'Bob';
+$she = 'Alice';
+$text = "$he said,\"PHP is awesome\".\"Of course.\" $she agreed.\n";
+
+echo $text;
 
 ?>
 </pre>
