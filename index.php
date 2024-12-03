@@ -15,6 +15,38 @@ if ($name == "Shuvo") {
 	echo "<br>My Name is " . $name;
 }
 $title = "PHP is Awesome";
+
+$balance = 100;
+
+echo '<pre>';
+var_dump($balance);
+echo '</pre>';
+
+$message = 'Insufficient balance';
+
+echo '<pre>';
+var_dump($message);
+echo '</pre>';
+
+function dd($data)
+{
+	echo '<pre>';
+	var_dump($data);
+	echo '</pre>';
+	die();
+}
+
+$message = 'Dump and die example';
+
+dd($message);
+
+# Integer type
+$count = 0;
+$max = 1000;
+$page_size = 10;
+# Float Type
+
+
 ?>
 </pre>
 <h1><?php echo $title; ?></h1>
