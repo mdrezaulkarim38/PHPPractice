@@ -28,17 +28,17 @@ echo '<pre>';
 var_dump($message);
 echo '</pre>';
 
-function dd($data)
-{
-	echo '<pre>';
-	var_dump($data);
-	echo '</pre>';
-	die();
-}
-
-$message = 'Dump and die example';
-
-dd($message);
+//function dd($data)
+//{
+//	echo '<pre>';
+//	var_dump($data);
+//	echo '</pre>';
+//	die();
+//}
+//
+//$message = 'Dump and die example';
+//
+//dd($message);
 
 # Integer type
 $max = 1000;
@@ -56,10 +56,22 @@ $message = 'PHP data Types';
 
 # Array Type
 $carts = ['laptop', 'mouse', 'keyboard'];
+echo $carts[0] . '<br>';
+echo $carts[1] . '<br>';
+echo $carts[2] . '<br>';
+
+$prices = [
+	'laptop' => 1000,
+	'mouse' => 50,
+	'keyboard' => 120
+];
+echo $prices['laptop'] . '<br>';
+echo $prices['mouse'] . '<br>';
+echo $prices['keyboard'] . '<br>';
 
 
 ?>
 </pre>
-<h1><?php echo $title; ?></h1>
+
 </body>
 </html>
