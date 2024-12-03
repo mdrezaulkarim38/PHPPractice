@@ -87,6 +87,41 @@ $text = "$he said,\"PHP is awesome\".\"Of course.\" $she agreed.\n";
 
 echo $text;
 
+echo (int)12.5 . '<br>'; // 12
+echo (int)12.1 . '<br>'; // 12
+echo (int)12.9 . '<br>'; // 12
+echo (int)-12.9 . '<br>'; // -12
+
+$amount = 100;
+echo $amount . ' USD<br>';
+$x = '20';
+$y = 20;
+var_dump($x === $y);
+
+$price = 100;
+$qty = 5;
+$discounted = $qty > 3 && $price > 99;
+var_dump($discounted);
+
+$expired = true;
+$purged = false;
+
+$clear_cache = $expired || $purged;
+
+var_dump($clear_cache);
+
+$expired = false;
+$purged = false;
+
+$clear_cache = $expired || $purged;
+
+var_dump($clear_cache);
+
+$result = (false or true);
+
+var_dump($result);
+
+
 ?>
 </pre>
 
