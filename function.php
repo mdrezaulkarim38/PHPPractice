@@ -53,9 +53,43 @@ echo '<br>';
 echo $st->department();
 echo '<br>';
 $st->details();
-
+echo '<br>';
 
 $cars = array("Volvo", "BMW", "Toyota");
+
+var_dump($cars);
+echo '<br>';
+foreach ($cars as $x) {
+    echo "$x <br>";
+}
+
+array_push($cars, "Ford");
+
+var_dump($cars);
+echo '<br>';
+
+$car = array("brand" => "Ford", "model" => "Mustang", "year" => 1964);
+var_dump($car);
+echo '<br>';
+
+
+$x = 75;
+function myFunction()
+{
+    echo $GLOBALS['x'];
+}
+
+myFunction();
+echo '<br>';
+
+function myTest()
+{
+    global $x;
+    echo $x;
+}
+
+myTest();
+echo '<br>';
 
 
 
