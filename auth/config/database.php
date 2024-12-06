@@ -1,5 +1,14 @@
 <?php
-const DB_HOST = 'localhost';
-const DB_NAME = 'auth';
-const DB_USER = 'root';
-const DB_PASSWORD = '';
+$serverName = 'localhost';
+$userName = 'root';
+$password = '';
+
+$conn = mysqli_connect($serverName, $userName, $password);
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+} else {
+    echo 'Connected Successfull';
+}
+
+
+#mysqli_close($conn);

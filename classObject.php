@@ -3,27 +3,32 @@
  * User Shuvo The Superman
  */
 
-class Car
+class BankAccount
 {
-    public $color = 'red';
-    public $weight = 2000;
+    public $accountNumber;
+    public $balance;
 
-    public function __construct($color, $weight)
+    public function deposit($amount)
     {
-        $this->color = $color;
-        $this->weight = $weight;
+        if ($amount > 0) {
+            $this->balance += $amount;
+        }
     }
 
-    public function getColor()
+    public function withdraw($amount)
     {
-        return $this->color;
+        if ($amount <= $this->balance) {
+            $this->balance -= $amount;
+            return true;
+        }
+        return false;
     }
 }
 
-$myCar = new Car('green', 2500);
-$myCar2 = new Car('white', 18000);
-
-echo $myCar->getColor() . PHP_EOL;
-echo $myCar2->getColor() . PHP_EOL;
-
+$account = new BankAccount();
+$account->accountNumber = 1;
+$account->balance = 100;
+$account->deposit(100)
+    ->deposit(200)
+    ->deposit(300);
 
